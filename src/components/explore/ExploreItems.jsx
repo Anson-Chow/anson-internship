@@ -82,7 +82,7 @@ const ExploreItems = () => {
               className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12"
               style={{ display: "block", backgroundSize: "cover" }}
             >
-              <Skeleton width={335} height={420} borderRadius={12} />
+              <Skeleton width={"100%"} height={400} borderRadius={12} />
             </div>
           ))}
 
