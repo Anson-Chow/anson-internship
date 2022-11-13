@@ -16,15 +16,12 @@ const NewItems = () => {
       "https://us-central1-nft-cloud-functions.cloudfunctions.net/newItems"
     );
     setItems(data);
-    console.log(data);
     setLoading(false);
   }
 
   useEffect(() => {
     fetchNewItems();
   }, []);
-
-  function timer() {}
 
   const responsiveness = {
     responsive: {
@@ -67,7 +64,7 @@ const NewItems = () => {
                   <div className="nft__item">
                     <div className="author_list_pp">
                       <Link
-                        to="/author"
+                        to={`/author/${data.authorId}`}
                         data-bs-toggle="tooltip"
                         data-bs-placement="top"
                         title="Creator: Monica Lucas"
