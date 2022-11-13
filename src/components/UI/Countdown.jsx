@@ -6,7 +6,7 @@ const Countdown = (expiryDate) => {
     useEffect(() => {
      setInterval(() => {
         getTimer()
-     }, 1000)   
+     }, 0)   
     }, [])
 
     function getTimer(){

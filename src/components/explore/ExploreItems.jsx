@@ -21,7 +21,6 @@ const ExploreItems = () => {
     );
     setExporeItems(data);
     setLoading(false);
-    console.log(exploreItems);
   }
 
   useEffect(() => {
