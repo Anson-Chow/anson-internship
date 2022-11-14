@@ -29,7 +29,7 @@ const NFTcard = ({ data, authorId, authorImage }) => {
           )}
 
           <div className="nft__item_wrap">
-            <Link to="/item-details">
+            <Link to={`/item-details/${data.nftId}`}>
               <img
                 src={data.nftImage}
                 className="lazy nft__item_preview"
@@ -38,7 +38,7 @@ const NFTcard = ({ data, authorId, authorImage }) => {
             </Link>
           </div>
           <div className="nft__item_info">
-            <Link to="/item-details">
+            <Link to={`/item-details/${data.nftId}`}>
               <h4>{data.title}</h4>
             </Link>
             <div className="nft__item_price">{data.price}</div>
