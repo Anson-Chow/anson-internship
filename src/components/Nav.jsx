@@ -33,6 +33,7 @@ const Nav = () => {
                     name="quick_search"
                     placeholder="search item here..."
                     type="text"
+                    disabled
                   />
                 </div>
               </div>
